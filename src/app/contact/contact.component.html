@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg ">
+    <a href="" class="navbar-brand"><strong>Pepper</strong></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#demo">
+        <span class="navbar-toggler-icon " style="color:coral"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="demo">
+        <ul class="navbar-nav">
+
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/gallery">Gallery</a></li>
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/about">About Us</a></li>
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/contact">Contact Us</a></li>
+
+
+
+        <!--    <li class="nav-item" ><a href="" class="nav-link" >Logout</a></li>  -->
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid" style="width:1100px;height:560px;margin-top: 10px;" >
+    <h1 class="text-center">Contact Us</h1>
+    <div class="row">
+    <div class="col">
+        <img src="https://media.istockphoto.com/photos/receptionist-giving-keys-to-hotel-guest-picture-id1192128830?b=1&k=20&m=1192128830&s=170667a&w=0&h=Plg2Lb_x30tARzMw2ZnNgcYjLlM82ZYJbzrEHySRIAI=" style="width:400px;height:450px;" alt="">
+    </div>
+    <div class="col">
+    <form action="" #form="ngForm" style="width:400px;height:450px;" (ngSubmit)="onsubmit()" >
+        <input class="form-control" name="name"  #name="ngModel" [(ngModel)]="data.name"   type="text" placeholder="name" ><br>
+        <input class="form-control" name="email" #email="ngModel" [(ngModel)]="data.email" type="email" placeholder="email"><br>
+        <input class="form-control" type="number" name="phone" #phone="ngModel" [(ngModel)]="data.phone" placeholder="Phonenumber"><br>
+        <textarea class="form-control" name="message" #message="ngModel" [(ngModel)]="data.message" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
+        <button type="submit" class="btn btn-warning btn-sm">Submit</button>
+    </form>
+</div>
+</div>
+</div>
+
+<footer style="height:43px;background-color:black;color:yellow;margin-top:3px;">
+    <p class="text-center"><strong>createdby @MamathaAnto2022</strong></p>
+</footer>

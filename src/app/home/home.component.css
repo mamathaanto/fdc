@@ -1,0 +1,14 @@
+.container-fluid{
+    background-size: cover; 
+    background-image: url("https://media.istockphoto.com/photos/cozy-restaurant-for-gathering-with-friends-picture-id1159992039?k=20&m=1159992039&s=612x612&w=0&h=t2lqevaWYLXvcjDeKzbHvIRF6GE3gxiqO6AIezr3Mws=") ; 
+   
+    width:100%;
+    height:85vh;
+    
+   }
+
+   form input{
+    background-color: rgb(0,0,0,0.4);
+    color:yellow;
+    border-color: yellow;
+   }

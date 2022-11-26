@@ -1,0 +1,10 @@
+nav{
+    color:white;
+    background-color: black;
+}
+nav a{
+    color:white;  
+}
+.container img:hover,.container h1:hover,.container p:hover{
+    opacity:0.6;
+}

@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg ">
+    <a href="" class="navbar-brand"><strong>Pepper</strong></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#demo">
+        <span class="navbar-toggler-icon " style="color:coral"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="demo">
+        <ul class="navbar-nav">
+            
+            
+            <li class="nav-item" ><a href="" class="nav-link" data-toggle="modal" data-target="#mymodal" >Register</a></li>
+
+            <div class="modal" id="mymodal" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body" style="background-color:rgb(20, 18, 18);color:white">
+                            <h2 class=" modal-title text-center text-warning" >SiGNUP</h2>
+                            <button class="close text-danger" data-dismiss="modal" type="button">&times;</button>
+
+                        
+                      
+                            <form #form="ngForm" (ngSubmit)="form.valid&&onsubmit()">
+                                Name:<input type="text" class="form-control" name="name" #name="ngModel" required [(ngModel)]="data.name" placeholder="Name" >
+                                <label class="text-danger "  *ngIf="form.submitted&&name.errors?.['required']">Name is required</label><br>
+                                Email: <input type="email" class="form-control" name="email" #email="ngModel" required [(ngModel)]="data.email" placeholder="Email">
+                                <label class="text-danger" *ngIf="form.submitted&&email.errors?.['required']">Email is required</label> <br>
+                                Phone: <input type="number" class="form-control" name="phone" #phone="ngModel" required [(ngModel)]="data.phone" placeholder="Phone Number">
+                                <label class="text-danger" *ngIf="form.submitted&&phone.errors?.['required']">Phone is required</label><br>
+                                Password: <input type="password" class="form-control" name="pswd" #pswd="ngModel" required [(ngModel)]="data.password" placeholder="Password">
+                                <label for="" class="text-danger" *ngIf="form.submitted&&pswd.errors?.['required']">Password is required</label> <br>
+                                <button class="btn btn-outline-danger" style="margin:auto;display: block;"  type="submit"  >Submit</button>
+                        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/gallery">Gallery</a></li>
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/about">AboutUs</a></li>
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/contact">Contact Us</a></li>
+
+
+
+        <!--    <li class="nav-item" ><a href="" class="nav-link" >Logout</a></li>  -->
+        </ul>
+    </div>
+</nav>
+
+

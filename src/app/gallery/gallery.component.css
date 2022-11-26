@@ -1,0 +1,11 @@
+.container img:hover{
+    opacity:0.6;
+    transform: scale(0.6);
+}
+nav{
+    color:white;
+    background-color: black;
+}
+nav a{
+    color:white;  
+}

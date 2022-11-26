@@ -1,0 +1,67 @@
+<app-header></app-header>
+<!--<div class="container">
+    <div class="row" >
+        <div class="col-4-lg" >
+            <div class="card"  style="margin-top:10px;margin-left:270px;width:600px;height:600px;color:coral;border-radius: 15px;background-color:rgb(255, 221, 157);">
+                <h2 class=" card-title text-center" >SiGNUP</h2>
+          
+                <form #form="ngForm" (ngSubmit)="form.valid&&onsubmit()">
+                    Name: <input type="text" class="form-control" name="name" #name="ngModel" required [(ngModel)]="data.name" >
+                    <label class="text-danger"  *ngIf="form.submitted&&name.errors?.['required']">Name is required</label><br>
+                    Email: <input type="email" class="form-control" name="email" #email="ngModel" required [(ngModel)]="data.email">
+                    <label class="text-danger" *ngIf="form.submitted&&email.errors?.['required']">Email is required</label> <br>
+                    Phone: <input type="number" class="form-control" name="phone" #phone="ngModel" required [(ngModel)]="data.phone">
+                    <label class="text-danger" *ngIf="form.submitted&&phone.errors?.['required']">Phone is required</label><br>
+                    Password: <input type="password" class="form-control" name="pswd" #pswd="ngModel" required [(ngModel)]="data.password">
+                    <label for="" class="text-danger" *ngIf="form.submitted&&pswd.errors?.['required']">Password is required</label> <br>
+                    <button class="btn btn-outline-danger" style="margin:auto;display: block;"  type="submit"  >Submit</button>
+            
+                </form>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</div>   --> 
+
+
+
+
+
+
+
+  <!--    <form [formGroup]="userform" (ngSubmit)="onsubmit()">
+
+                    <input type="text" name="name" placeholder="Name" class="d-flex align-items-center justify-content-center "
+                    style="margin-left:80px ;border-radius:8px;padding:7px;width:450px;border-color:white;"
+                        formControlName="name" [ngClass]="{'is-invalid':submit&&f1.name.errors}">
+                    <label *ngIf="submit&&f1.name.errors" class="invalid-feedback">
+                        <label *ngIf="f1.name.errors?.['required']" style="margin-left: 100px;"><strong > Name is required</strong></label>
+                    </label> <br>
+
+                    <input type="email" name="email" placeholder="Email" class="d-flex align-items-center justify-content-center "
+                    style="margin-left:80px ;border-radius:8px;padding:7px;width:450px;border-color:white;"
+                        formControlName="email" [ngClass]="{'is-invalid':submit&&f1.email.errors}">
+                    <label *ngIf="submit&&f1.email.errors" class="invalid-feedback">
+                        <label *ngIf="f1.email.errors?.['required']" style="margin-left: 100px;"><strong > Email is required</strong></label>
+                    </label> <br>
+
+                    <input type="number" name="phone" placeholder="Phone Number" class="d-flex align-items-center justify-content-center "
+                    style="margin-left:80px ;border-radius:8px;padding:7px;width:450px;border-color:white;"
+                        formControlName="phone" [ngClass]="{'is-invalid':submit&&f1.phone.errors}">
+                    <label *ngIf="submit&&f1.phone.errors" class="invalid-feedback">
+                        <label *ngIf="f1.phone.errors?.['required']" style="margin-left: 100px;"><strong > Phone Number is required</strong></label>
+                    </label> <br>
+
+                    <input type="password" name="password" placeholder="Password" class="d-flex align-items-center justify-content-center"
+                    style="margin-left:80px ;border-radius:8px;padding:7px;width:450px;border-color:white;"
+                        formControlName="password" [ngClass]="{'is-invalid':submit&&f1.password.errors}">
+                    <label *ngIf="submit&&f1.password.errors" class="invalid-feedback">
+                        <label *ngIf="f1.password.errors?.['required']" style="margin-left: 100px;"><strong >Password is required</strong></label>
+                    </label><br>
+                    <button type="submit" class="btn btn-outline-warning" style="margin:auto;display: block;" >Submit</button>
+
+                </form>-->

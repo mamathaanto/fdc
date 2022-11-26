@@ -1,0 +1,17 @@
+nav{
+    color:white;
+    background-color: black;
+}
+nav a{
+    color:white;  
+}
+nav ul{
+   
+ margin-left: 1070px;  
+ padding:10px; 
+   
+}
+nav button{
+    background-color: black;
+    
+}

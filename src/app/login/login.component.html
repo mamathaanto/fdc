@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <h1 class="text-center "  >LOGIN </h1>
+    <form #form="ngForm" (ngSubmit)="form.valid&&onsubmit()">
+        Name: <input type="text" class="form-control" name="name" #name="ngModel" required [(ngModel)]="data.name" >
+        <label class="text-danger"  *ngIf="form.submitted&&name.errors?.['required']">Name is required</label><br>
+        Email: <input type="email" class="form-control" name="email" #email="ngModel" required [(ngModel)]="data.email">
+        <label class="text-danger" *ngIf="form.submitted&&email.errors?.['required']">Email is required</label> <br>
+        Phone: <input type="number" class="form-control" name="phone" #phone="ngModel" required [(ngModel)]="data.phone">
+        <label class="text-danger" *ngIf="form.submitted&&phone.errors?.['required']">Phone is required</label><br>
+        
+        Password: <input type="password" class="form-control" name="pswd" #pswd="ngModel" required [(ngModel)]="data.password">
+        <label for="" class="text-danger" *ngIf="form.submitted&&pswd.errors?.['required']">Password is required</label> <br>
+        <button class="btn btn-outline-danger" style="margin:auto;display: block;"  type="submit">Submit</button>
+
+    </form>
+</div>

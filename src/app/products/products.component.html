@@ -1,0 +1,76 @@
+<app-h1></app-h1>
+<div class="container">
+    <div class="row">
+       
+         <div class="col-4-lg" style="width:250px;height:600px;margin: 40px;" *ngFor="let item of productlist;">
+                <div class="card text-center" style="background-color:cadetblue ;">
+                    <p class="card-text text-center">{{item.id}}</p>
+                    <p class="card-title">{{item.name}}</p>
+                    <div class="card-body">
+                        <img src="{{imagelist}}{{item.image}}" style="width:200px;height:200px;" class="card-img-top"
+                            alt="">
+
+                        <p class="card-text">{{item.description}}</p>
+                        <p class="card-text">{{item.price}}</p>
+                       <p hidden> a={{item.id}}</p>
+                        <div *ngVar="a as variable"></div>
+               
+                        <form action="" #productform="ngForm" (ngSubmit)="onsubmit(productform.value)" >
+                          
+                           
+                            <input type="text" hidden value="{{value3}}" ngModel="{{value3}}" name="value3" >
+                            <input type="text" hidden value="a" ngModel="{{item.id}}" name="a"  >
+                           
+                        
+                        
+
+                        <div style="display:inline-block ;justify-content:space-between;">
+                            <button class="btn btn-warning" type="submit" (click)="addtocart(item)">AddtoCart</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>  
+      
+        
+        </div>
+    </div>
+
+    <footer style="height:43px;background-color:black;color:yellow;">
+        <p class="text-center"><strong>createdby @MamathaAnto2022</strong></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="col-4-lg" *ngIf="wishlist(item!=0)">
+            <h2>My wishlist</h2>
+            <div class="card">
+                <div *ngFor="let x of productlist">
+                    <div class="row">
+                        <div class="col">
+                            <img src="{{imagelist}}{{x.image}}" class="card-img-top" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="card-text"><strong>{{x.name}}</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>--> 
+   

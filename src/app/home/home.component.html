@@ -1,0 +1,54 @@
+<app-header></app-header>
+<div class="container-fluid img-fluid">
+ <div class="text-warning" >
+    <marquee behavior="" direction=""><h3>Welcome to PepPeR</h3></marquee>
+ </div>
+       
+    
+        <div class="row" >
+            <div class="col-4-lg" >
+                <div  style="margin-top:160px;margin-left:10px;width:400px;height:320px;color:yellow;border-radius: 15px;background-color: rgb(0,0,0,0.4);">
+                    <h2 class=" text-center" >Login</h2>
+                
+
+                    <form #form="ngForm" (ngSubmit)="form.valid&&onsubmit()">
+                        Email: <input type="email" class="form-control" name="email" #email="ngModel" required [(ngModel)]="data.email">
+                        <label class="text-danger" *ngIf="form.submitted&&email.errors?.['required']">Email is required</label> <br>
+                        
+                        Password: <input type="password" class="form-control" name="pswd" #pswd="ngModel" required [(ngModel)]="data.password">
+                        <label for="" class="text-danger" *ngIf="form.submitted&&pswd.errors?.['required']">Password is required</label> <br>
+                        <button class="btn btn-outline-danger"  style="margin:auto;display: block;"  type="submit"  >Submit</button>
+                
+                    </form>
+
+                
+                </div>
+            </div>
+
+            
+
+        </div>
+    
+</div>
+
+<footer style="height:43px;background-color:black;color:yellow;">
+    <p class="text-center"><strong>createdby @MamathaAnto2022</strong></p>
+</footer>
+
+ <!--  <form [formGroup]="userform" (ngSubmit)="onsubmit()">
+                        <input type="email" name="email" placeholder="Email" class="d-flex align-items-center justify-content-center"
+                        style="margin-left:80px ;border-radius:8px;padding:7px;border-color:white;"
+                            formControlName="email" [ngClass]="{'is-invalid':submit&&f1.email.errors}">
+                        <label *ngIf="submit&&f1.email.errors" class="invalid-feedback">
+                            <label *ngIf="f1.email.errors?.['required']" style="margin-left: 100px;"><strong > Email is required</strong></label>
+                        </label> <br>
+
+                        <input type="password" name="password" placeholder="Password" class="d-flex align-items-center justify-content-center"
+                        style="margin-left:80px ;border-radius:8px;padding:7px;border-color:white;"
+                            formControlName="password" [ngClass]="{'is-invalid':submit&&f1.password.errors}">
+                        <label *ngIf="submit&&f1.password.errors" class="invalid-feedback">
+                            <label *ngIf="f1.password.errors?.['required']" style="margin-left: 100px;"><strong >Password is required</strong></label>
+                        </label><br>
+                        <button type="submit" class="btn btn-outline-warning" style="margin-left:140px;" >Submit</button>
+
+                    </form>--> 

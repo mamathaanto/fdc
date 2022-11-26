@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg ">
+    <a href="" class="navbar-brand"><strong>Pepper</strong></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#demo">
+        <span class="navbar-toggler-icon " style="color:coral"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="demo">
+        <ul class="navbar-nav">
+
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/gallery">Gallery</a></li>
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/about">About Us</a></li>
+            <li class="nav-item" ><a href="" class="nav-link" routerLink="/contact">Contact Us</a></li>
+
+
+        <!--    <li class="nav-item" ><a href="" class="nav-link" >Logout</a></li>  -->
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h1 class="text-center">Gallery</h1>
+    <div class="row">
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZCUyMGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1568625365131-079e026a927d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZCUyMGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1598214886806-c87b84b7078b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZCUyMGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1551326844-4df70f78d0e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2QlMjBpbWFnZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1553696836-03510978653f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2QlMjBpbWFnZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1610898763980-367f03bd7edc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZvb2QlMjBpbWFnZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1574172367915-0059de1452f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2QlMjBpbWFnZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+        <div class="col-sm-4" >
+            <img src="https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZCUyMGltYWdlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+    </div>
+
+
+    
+    <div class="row">
+    
+        <div class="col-sm-4" *ngFor="let x of productlist">
+            <img src="{{imagelist}}{{x.image}}"  style="width:250px;height:250px;padding:10px;margin:10px;" alt="">
+        </div>
+    </div>
+
+</div>
+
+<footer style="height:43px;background-color:black;color:yellow;">
+    <p class="text-center"><strong>createdby @MamathaAnto2022</strong></p>
+</footer>
